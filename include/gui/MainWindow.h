@@ -7,7 +7,7 @@
 
 #include "MainComponent.h"
 
-#include "melatonin_inspector/melatonin_inspector.h"
+//#include "melatonin_inspector/melatonin_inspector.h"
 
 
 class MainWindow final : public juce::DocumentWindow
@@ -18,7 +18,7 @@ public:
     void closeButtonPressed();
 
 private:
-    melatonin::Inspector inspector { *this }; //MELATONIN WINDOW
+    //melatonin::Inspector inspector { *this }; //MELATONIN WINDOW
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MainWindow);
 };

@@ -1,18 +1,38 @@
 # TODO:
 
+OVERALL:
+
 + Bugs
-  + [ ] Memory management
+  + [ ] Memory management4
+
+
++ UI
++ [ ] Tile grouping coloring working dynamically
++ [ ] Save Session
++ [ ] Add labels for UI components
++ [ ] Labeling of clips / tracks
++ [ ] Creation / Deletion of Tracks
++ [ ] Audio waveform visualizations
+
+MAC:
+
++ Bugs
   + [ ] Clip scheduling
   + [ ] Component focus when opening application (?)
 
+LINUX:
+
 + UI
-  + [ ] Tile grouping coloring working dynamically
-  + [ ] Save Session
-  + [ ] Add labels for UI components
-  + [ ] Labeling of clips / tracks
-  + [ ] Help menu
-  + [ ] Creation / Deletion of Tracks
-  + [ ] Audio waveform visualizations
++ [] Help menu
+
+
+WINDOWS:
+
++ UI
++ [] Help menu
+
+
+
 
 + Audio
   + [ ] Testing multiple audio cards / interfaces

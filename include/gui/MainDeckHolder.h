@@ -5,7 +5,7 @@
 #pragma once
 #include "MainDeckGUI.h"
 #include "MainDeckTiles.h"
-#include <focusrite/e2e/ComponentSearch.h>
+//#include <focusrite/e2e/ComponentSearch.h>
 
 class MainDeckMask final : public juce::Component,
                            public juce::DragAndDropTarget,
@@ -274,7 +274,7 @@ public:
     mainDecks[0]->addTrack(tree, firstHalf);
     mainDecks[1]->addTrack(tree, secondHalf);
     auto mask = new MainDeckMask(tree, tiles, freeDeckGui);
-    focusrite::e2e::ComponentSearch::setTestId (*mask, "test_mask"); //for testing
+    //focusrite::e2e::ComponentSearch::setTestId (*mask, "test_mask"); //for testing
     mask->setSize(getWidth(), TRACK_HEIGHT);
     grid.items.add(mask); //always returns right component?
     addAndMakeVisible(mask);

@@ -72,10 +72,10 @@ CPMAddPackage(
         SOURCE_DIR ${LIB_DIR}/jest
 )
 
-set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+#set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
 # This command allows running tests from the "build" folder (the one where CMake generates the project to).
-enable_testing()
+#enable_testing()
 
 include_directories(include)
 

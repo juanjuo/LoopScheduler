@@ -6,7 +6,7 @@
 #include <gui/MainWindow.h>
 #include <helpers/helpers.h>
 #include <gui/SPCommandManager.h>
-#include <focusrite/e2e/TestCentre.h>
+//#include <focusrite/e2e/TestCentre.h>
 
 /* TODO:
  *
@@ -80,7 +80,7 @@ public:
 
         //std::cerr << commandManager->invokeDirectly(SP_CommandID::print, true) << std::endl;
 
-        testCentre = focusrite::e2e::TestCentre::create();
+        //testCentre = focusrite::e2e::TestCentre::create();
     }
 
     void shutdown() override
@@ -92,7 +92,7 @@ public:
         mainAudio = nullptr;
         deviceManager = nullptr;
 
-        testCentre.reset();
+        //testCentre.reset();
     }
 
     //==============================================================================
@@ -155,7 +155,7 @@ private:
     juce::ValueTree valueTree {SP_ID::MAIN_BRANCH};
 
     //End-to-End Testing
-    std::unique_ptr<focusrite::e2e::TestCentre> testCentre;
+    //std::unique_ptr<focusrite::e2e::TestCentre> testCentre;
 };
 
 //==============================================================================

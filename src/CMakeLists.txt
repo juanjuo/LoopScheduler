@@ -67,8 +67,8 @@ target_link_libraries(${PROJECT_NAME}
             juce::juce_animation
             #jive::jive_layouts
             #jive::jive_style_sheets
-            melatonin_inspector
-            focusrite-e2e::focusrite-e2e
+            #melatonin_inspector
+            #focusrite-e2e::focusrite-e2e
         PUBLIC
             juce::juce_recommended_config_flags
             juce::juce_recommended_lto_flags #link time optimization flags

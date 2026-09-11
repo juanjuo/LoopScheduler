@@ -3,7 +3,7 @@
 //
 #pragma once
 #include "DeckGUI.h"
-#include <focusrite/e2e/ComponentSearch.h>
+//#include <focusrite/e2e/ComponentSearch.h>
 
 class MixDeckTrack final : public juce::Component,
                            public DeckGUI,
@@ -20,7 +20,7 @@ public:
         volumeSlider.setValue(initialGain);
         volumeSlider.addListener(this);
 
-        focusrite::e2e::ComponentSearch::setTestId (volumeSlider, "test_track_volume_slider"); //for testing
+        //focusrite::e2e::ComponentSearch::setTestId (volumeSlider, "test_track_volume_slider"); //for testing
 
         setUpValueTree();
     }

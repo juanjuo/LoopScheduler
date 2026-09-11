@@ -1,5 +1,5 @@
 #include <gui/MainComponent.h>
-#include <focusrite/e2e/ComponentSearch.h>
+//#include <focusrite/e2e/ComponentSearch.h>
 
 MainComponent::MainComponent(const juce::ValueTree& tree, SPCommandManager& manager, juce::AudioDeviceManager& dmanager)
     : commandManager(manager), deviceManager(dmanager), valueTree(tree)
@@ -23,7 +23,7 @@ MainComponent::MainComponent(const juce::ValueTree& tree, SPCommandManager& mana
     addAndMakeVisible(menu.get());
     addChildComponent(deviceSelector.get());
 
-    focusrite::e2e::ComponentSearch::setTestId(*deviceSelector, "test_deviceSelector"); //for testing
+    //focusrite::e2e::ComponentSearch::setTestId(*deviceSelector, "test_deviceSelector"); //for testing
 
     commandManager.registerAllCommandsForTarget(this);
     commandManager.addTargetToCommandManager(this);
