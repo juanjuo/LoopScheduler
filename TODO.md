@@ -3,10 +3,10 @@
 OVERALL:
 
 + Separate GUI and Audio
-+ fix audio completely to run separately from gui 
++ fix audio completely to run separately from gui
+  + Make pauseOrResumeProcessing part of ValueTree (and set up commandManager)
   + set up XML? Some other way of serializing data
   + Set up device manager
-  + Make pauseOrResumeProcessing part of ValueTree (and maybe other application states?)
   + Reset current beat counter????????
 + Build GUI separately
 
@@ -53,3 +53,23 @@ WINDOWS:
   + [ ] Improve Testing documentation
   + [ ] Improve app documentation
   + [ ] Add logging for debug mode ONLY
+
+TODO:
+*
+* TESTING:
+* - set up testing
+* - test audio classes (test for real time constrains in the audio thread)
+
+* GUI:
+
+* - Project Management (load, save, name)
+* - Use Debuggin for screen ((Put JUCE_ENABLE_REPAINT_DEBUGGING=1 in
+*   target_compile_definitions in your CMakeLists.txt))
+* - Use JUCE_LIVE_CONSTANT (lets you manipulate any value live to fine-tune them)
+
+* AUDIO:
+* - Device Manager
+* - MIDI
+
+* LOOPER:
+* - Looping Recorded audio

@@ -8,8 +8,8 @@ project(LoopScheduler VERSION 0.0.1)
 # audio folder is a good practice. It helps avoid name clashes later on.
 set(AUDIO_DIR ${CMAKE_CURRENT_SOURCE_DIR}/audio)
 set(GUI_DIR ${CMAKE_CURRENT_SOURCE_DIR}/gui)
-set(HELPERS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/helpers)
-set(MAIN_DIR ${CMAKE_CURRENT_SOURCE_DIR}/main)
+#set(HELPERS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/helpers)
+#set(MAIN_DIR ${CMAKE_CURRENT_SOURCE_DIR}/main)
 
 # Adds a plugin target (that's basically what the Projucer does).
 #juce_add_plugin(${PROJECT_NAME}
@@ -51,7 +51,7 @@ target_include_directories(${PROJECT_NAME}
         PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/audio
         ${CMAKE_CURRENT_SOURCE_DIR}/gui
-        ${CMAKE_CURRENT_SOURCE_DIR}/main
+        #${CMAKE_CURRENT_SOURCE_DIR}/main
 )
 
 # Links to all necessary dependencies. The present ones are recommended by JUCE.

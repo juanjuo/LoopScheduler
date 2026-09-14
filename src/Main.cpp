@@ -8,39 +8,6 @@
 #include <gui/SPCommandManager.h>
 //#include <focusrite/e2e/TestCentre.h>
 
-/* TODO:
- *
- * TESTING:
- * - set up testing
- * - test audio classes (test for real time constrains in the audio thread)
- * - test gui (test for user response, how things are supposed to react when interacted with GUI)
- * - think about unit test and end-to-end testing?
- *
- * GUI:
- * - expand metronome, make number boxes behave correctly
- * - add Track Tree Structure
- * - implement looping stage (including playhead, drag and drop, a grid that links to the metrono)
- * - Project Management (load, save, name)
- * - Use Debuggin for screen ((Put JUCE_ENABLE_REPAINT_DEBUGGING=1 in
- *   target_compile_definitions in your CMakeLists.txt))
- * - Use JUCE_LIVE_CONSTANT (lets you manipulate any value live to fine-tune them)
- *
- * AUDIO:
- * - Device Manager
- * - Recording - using device manager and writing recorded buffers to disk
- * - Playback - using recorded buffers from disk and using device manager
- * - MIDI
- * - Playback commands (start, stop)
- * - Moving Playhead
- * - Improve Metronome, make it identify beats and produce different tones
- *
- * LOOPER:
- * - Quantizing Commands ?? linked to the metronome
- * - Looping Recorded audio
- * - Scheduler?
- *
- */
-
 //==============================================================================
 class GuiAppApplication final : public juce::JUCEApplication
 {
@@ -71,7 +38,7 @@ public:
 
         mainComponent = std::make_unique<MainComponent>(valueTree, *commandManager, *deviceManager);
 
-        mainWindow = std::make_unique<MainWindow>(getApplicationName(), mainComponent.get());
+        //mainWindow = std::make_unique<MainWindow>(getApplicationName(), mainComponent.get());
 
         commandManager->registerAllCommandsForTarget(this);
         commandManager->addTargetToCommandManager(this);
