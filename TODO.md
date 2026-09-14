@@ -2,8 +2,17 @@
 
 OVERALL:
 
++ Separate GUI and Audio
++ fix audio completely to run separately from gui 
+  + set up XML? Some other way of serializing data
+  + Set up device manager
+  + Make pauseOrResumeProcessing part of ValueTree (and maybe other application states?)
+  + Reset current beat counter????????
++ Build GUI separately
+
+
 + Bugs
-  + [ ] Memory management4
+  + [ ] Memory management
 
 
 + UI
@@ -30,8 +39,6 @@ WINDOWS:
 
 + UI
 + [] Help menu
-
-
 
 
 + Audio
